@@ -1,0 +1,70 @@
+/* Base */
+*, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif
+}
+
+img {
+  max-width: 100%
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Commmon classes */
+.container {
+  width: 900px;
+  max-width: 100%;
+  margin: auto;
+  padding: 12px 16px;
+}
+.flex { display: flex }
+.flex-center { justify-content: center }
+.flex-middle { align-items: center }
+
+.bg-green { background-color: #ae7 }
+.bg-purple { background-color: #dae }
+.bg-skyblue { background-color: skyblue }
+.bg-orange { background-color: coral }
+
+/* Menu */
+.menu-example {
+  position: fixed;
+  z-index: 10;
+  top: 15px;
+  right: 15px;
+  padding: 10px;
+  background: white;
+}
+
+.menu-example a {
+  display: inline-block;
+  padding: 0 10px;
+  color: coral;
+}
+
+/* Dotnav */
+.dotnav {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.dotnav a {
+  cursor: pointer;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.dotnav a:before {
+  font-size: 50px;
+  content: '⚪'
+}
+.dotnav a.active:before { content: '⚫'}

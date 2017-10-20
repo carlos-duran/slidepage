@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SlidePage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="slidepage.css">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body class="slidepage">
+
+  <nav class="menu-example">
+    <a href="./index.html">Default</a>
+    <a href="./tumblr.html">Tumblr</a>
+  </nav>
+
+  <div class="slide bg-green flex flex-middle">
+    <div class="container">
+      <h1>Default Example</h1>
+      <img src="https://placeimg.com/400/300/tech" alt="Tech">
+    </div>
+  </div>
+
+  <div class="slide bg-purple flex">
+    <div class="container">
+      <h1>Nature</h1>
+      <img src="https://placeimg.com/600/300/nature" alt="Nature">
+    </div>
+  </div>
+
+  <div class="slide bg-skyblue flex">
+    <div class="container">
+      <h1>Animals</h1>
+      <img src="https://placeimg.com/400/300/animals" alt="Animals">
+    </div>
+  </div>
+
+  <div class="slide bg-orange flex">
+    <div class="container">
+      <h1>People</h1>
+      <img src="https://placeimg.com/500/300/people" alt="People">
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script src="slidepage.js"></script>
+  <script>
+  var test = new SlidePage(document.body)
+  </script>
+</body>
+</html>
